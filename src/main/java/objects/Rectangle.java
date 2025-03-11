@@ -1,4 +1,4 @@
-package Objects;
+package objects;
 
 public class Rectangle {
 
@@ -7,6 +7,20 @@ public class Rectangle {
     private int sides = 4;
 
     // those are the fields of the rectangle
+
+    // constructors before methods and after global fields
+
+    public Rectangle(){
+        setLength(0);   //proper way to do it -> using methods
+        this.width = 0;
+    }
+
+    // all args constructor
+
+    public Rectangle(double length, double width){
+        setLength(length);
+        setWidth(width);
+    }
 
     public double calculatePerimeter() {
         return (2 * length) + (2 * width);
