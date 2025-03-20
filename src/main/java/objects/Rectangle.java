@@ -2,9 +2,9 @@ package objects;
 
 public class Rectangle {
 
-    private double length;
-    private double width;
-    private int sides = 4;
+    protected double length;
+    protected double width;
+    protected int sides = 4;
 
     // those are the fields of the rectangle
 
@@ -13,6 +13,10 @@ public class Rectangle {
     public Rectangle(){
         setLength(0);   //proper way to do it -> using methods
         this.width = 0;
+    }
+
+    public void print(){
+        System.out.println("I am a Rectangle");
     }
 
     // all args constructor
