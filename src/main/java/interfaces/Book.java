@@ -14,9 +14,10 @@ public class Book implements Product{
     }
 
     @Override
-    public void SetName(String name) {
-        this.name = name;
+    public void setName(String name) {
+
     }
+
 
     public String getTitle() {
         return title;
